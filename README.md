@@ -69,7 +69,7 @@ In your curation process file,
 
 ### Assessing your progress
 
-1. In your repository on Github, open an issue to provide feedback on your experience with this lab (Click on the 'Issues' tab and then click the 'New issue' button). Title the issue "Lab 5 feedback" and provide your feedback in the body of the issue.
+1. In your repository on Github, open an issue to provide feedback on your experience with this lab (Click on the 'Issues' tab and then click the 'New issue' button). Title the issue "Lab 6 feedback" and provide your feedback in the body of the issue.
 
 Some questions to consider: 
 
