@@ -1,4 +1,4 @@
-# Lab 6: Organizing and documenting data
+# Lab 06: Organizing and documenting data
 
 <!-- 
 - [ ] Create dev container
