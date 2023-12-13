@@ -1,6 +1,6 @@
 # Lab 06: Organizing and documenting data
 
-<!-- 
+<!--
 - [ ] Create dev container
 -->
 
@@ -20,7 +20,7 @@
 
 In this lab, you will be using Git and Github to fork, clone, commit, and push changes to a repository. The repository you will select to use as the repository to fork to your own Github account can be one of the following:
 
-- [Lab 6 repository](https://github.com/qtalr/lab-6)
+- [Lab 06 repository](https://github.com/qtalr/lab-06)
 - [Minimal template](https://github.com/qtalr/project)
 - [Web-based project template](https://github.com/qtalr/project_web)
 - Other (consult your instructor)
@@ -31,34 +31,34 @@ If you are using an existing reproducible research project repository, open that
 
 Open a Quarto document in the process directory and name it accordingly (e.g., `2_curate.qmd`, `data_curation.qmd`, *etc.*).
 
-The data you select to curate should be of the unstructured or semi-structured variety and may be one of the following: 
+The data you select to curate should be of the unstructured or semi-structured variety and may be one of the following:
 
 - [The ACTIV-ES Corpus (v.02)](https://github.com/francojc/activ-es/tree/master/activ-es-v.02/corpus). Download either the `eagles.zip`, `plain.zip`, or `tagged.zip` versions using the `get_compressed_data()` function from the `qtalrkit` package.
-- The data you collected in Lab 5
+- The data you collected in Lab 05
 - Other (consult your instructor)
 
 ### Organizing data
 
 In your curation process file,
 
-1. add a section which provides a brief description of the data you are curating. Include: 
+1. add a section which provides a brief description of the data you are curating. Include:
 
   - the name and/ or source of the data
   - the nature of the data
   - the acquisition strategy that was used
   - the format of the data
 
-2. add a section which provides a description of the data structure of the resource, outines the relationships between the data elements, and proposes an idealized format for the curated dataset. Include: 
+2. add a section which provides a description of the data structure of the resource, outines the relationships between the data elements, and proposes an idealized format for the curated dataset. Include:
 
-  - the relevant directories and data files 
+  - the relevant directories and data files
   - the metadata and/ or variables to be organized
   - the relationships between the data elements
   - the idealized format for the curated dataset in a tabular format
 
-3. add a section which programmatically reads, organizes, and writes the curated dataset. This is where you will craft the code to curate the data.Include prose and code comments to describe the process of organizing the data. 
+3. add a section which programmatically reads, organizes, and writes the curated dataset. This is where you will craft the code to curate the data.Include prose and code comments to describe the process of organizing the data.
 
 4. Make sure to organize your data curation process in a way that is reproducible. This means that you should be able to run the code in your data curation process file and reproduce the data curation process. Use the `data/derived` (or similar) directory to store the curated dataset and the data dictionary.
-   
+
 5. Make sure that your code is well documented with code comments and that you have included prose to describe the process of curating the data.
 
 6. Include a section to describe the resulting data and to display the data dictionary you have created for this data as a table.
@@ -69,13 +69,13 @@ In your curation process file,
 
 ### Assessing your progress
 
-1. In your repository on Github, open an issue to provide feedback on your experience with this lab (Click on the 'Issues' tab and then click the 'New issue' button). Title the issue "Lab 6 feedback" and provide your feedback in the body of the issue.
+1. In your repository on Github, open an issue to provide feedback on your experience with this lab (Click on the 'Issues' tab and then click the 'New issue' button). Title the issue "Lab 06 feedback" and provide your feedback in the body of the issue.
 
-Some questions to consider: 
+Some questions to consider:
 
   - What did you learn?
   - What did you find most/ least challenging?
-  - What resources did you consult? 
+  - What resources did you consult?
     - Instructor? R or Quarto documentation, Websites (provide links)?
   - What more would you like to know about curating datasets?
     - Find potential resources you might consult to continue your learning. Provide links and a brief description of the resource.
