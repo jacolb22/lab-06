@@ -65,7 +65,7 @@ In your curation process file,
 
 7. Confirm that your code runs without errors and that the data is curated and displayed as expected.
 
-8. Finally, commit and push your changes to your Github repository.
+8. Finally, commit and push your changes to your Github repository. *Make sure to include files or directories that you do not have permission to share in your `.gitignore` file.*
 
 ### Assessing your progress
 
