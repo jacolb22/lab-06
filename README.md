@@ -1,9 +1,5 @@
 # Lab 06: Organizing and documenting data
 
-<!--
-- [ ] Create dev container
--->
-
 ## Preparation
 
 - Read/ annotate: [Recipe \#6](https://qtalr.github.io/qtalrkit/articles/recipe-6.html). You can refer back to this document to help you at any point during this lab activity.
