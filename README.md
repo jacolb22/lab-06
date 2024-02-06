@@ -1,4 +1,4 @@
-# Lab 06: Organizing and documenting data
+# Lab 06: Taming datasets
 
 ## Preparation
 
