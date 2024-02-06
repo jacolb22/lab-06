@@ -1,4 +1,4 @@
-# Lab 06: Taming datasets
+# Lab 06: Taming data
 
 ## Preparation
 
