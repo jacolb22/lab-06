@@ -29,7 +29,8 @@ Open a Quarto document in the process directory and name it accordingly (e.g., `
 
 The data you select to curate should be of the unstructured or semi-structured variety and may be one of the following:
 
-- [The ACTIV-ES Corpus (v.02)](https://github.com/francojc/activ-es/tree/master/activ-es-v.02/corpus). Download either the `eagles.zip`, `plain.zip`, or `tagged.zip` versions using the `get_compressed_data()` function from the `qtalrkit` package.
+- [The ACTIV-ES Corpus (v.02)](https://github.com/francojc/activ-es/tree/master/activ-es-v.02/corpus).
+  - Download either the [`eagles.zip`](https://github.com/francojc/activ-es/raw/master/activ-es-v.02/corpus/eagles.zip), [`plain.zip`](https://github.com/francojc/activ-es/raw/master/activ-es-v.02/corpus/plain.zip), or [`tagged.zip`](https://github.com/francojc/activ-es/raw/master/activ-es-v.02/corpus/tagged.zip) versions using the `get_compressed_data()` function from the `qtalrkit` package.
 - The data you collected in Lab 05
 - Other (consult your instructor)
 
@@ -53,7 +54,7 @@ In your curation process file,
 
 3. add a section which programmatically reads, organizes, and writes the curated dataset. This is where you will craft the code to curate the data.Include prose and code comments to describe the process of organizing the data.
 
-4. Make sure to organize your data curation process in a way that is reproducible. This means that you should be able to run the code in your data curation process file and reproduce the data curation process. Use the `data/derived` (or similar) directory to store the curated dataset and the data dictionary.
+4. Make sure to organize your data curation process in a way that is reproducible. This means that you should be able to run the code in your data curation process file and reproduce the data curation process. Use the `data/derived/`directory to store the curated dataset and the data dictionary.
 
 5. Make sure that your code is well documented with code comments and that you have included prose to describe the process of curating the data.
 

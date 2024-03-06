@@ -1,8 +1,16 @@
+# Lab-internal files
+cite-packages.R
+
+# RStudio files
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
-.DS_Store
 *.Rproj
-_*
-cite-packages.R
+
+# macOS files
+.DS_Store
+
+# Data
+data/original/actives/*
+data/derived/actives_curated.csv

@@ -1,0 +1,9 @@
+attribute,description
+Resource name,"ACTIV-ES: a comparable Spanish corpus comprised of film dialogue from Argentine, Mexican and Spanish productions (v.02)"
+Data source,"URL: https://github.com/francojc/activ-es and DOI: 10.5281/zenodo.1492613"
+Data sampling frame,"Spanish-language TV-film transcripts from Argentina, Mexico, and Spain"
+Data collection date(s),"1940s-2010s"
+Data format,"Running text files (.run), Part of Speech tagged files (.pos), and EAGLES tagged files (.eagles)"
+Data schema,"File names reflect: language code, country, year, title, type, genre (first genre listed in the IMDb), and IMDb ID"
+License,"GNU General Public License v2.0"
+Attribution,"Jerid Francom. (2018). ACTIV-ES: a comparable Spanish corpus comprised of film dialogue from Argentine, Mexican and Spanish productions (activ-es-v.02) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.1492613"

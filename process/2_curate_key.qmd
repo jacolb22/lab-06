@@ -1,0 +1,184 @@
+---
+title: "Lab 06: Taming data (key)"
+description: |
+  You can use this template for Lab 06. However, you will need to add the prose descriptions, add code comments, edit the data dictionary, and complete the self-assessment.
+author: "Jerid Francom"
+bibliography: ["../bibliography.bib", "../packages.bib"]
+---
+
+```{r}
+#| label: setup
+#| message: false
+
+library(dplyr)        #
+library(knitr)        #
+library(readtext)     #
+library(readr)        #
+library(qtalrkit)     #
+```
+
+```{r}
+#| label: acquire-data
+#| message: false
+#| echo: false
+#| eval: false
+
+#
+get_compressed_data(
+  url = "https://github.com/francojc/activ-es/raw/master/activ-es-v.02/corpus/plain.zip", #
+  target_dir = "data/original/actives" #
+)
+```
+
+## Data
+
+<!--
+
+- Overview of the data source and the purpose of this script
+
+-->
+
+### Description
+
+<!--
+
+- the name and/ or source of the data
+- the nature of the data
+- the acquisition strategy that was used
+- the format of the data
+
+-->
+
+```{r}
+#| label: tbl-data-origin-file
+#| tbl-cap: "Data origin: Actives corpus"
+#| tbl-colwidths: [30, 70]
+#| message: false
+
+#
+read_csv("../data/original/actives_do.csv") |>
+  kable() #
+
+```
+
+### Structure
+
+<!--
+
+- the relevant directories and data files
+- the metadata and/ or variables to be organized
+- the relationships between the data elements
+- the idealized format for the curated dataset in a tabular format
+
+-->
+
+## Curate
+
+<!-- Overview of the data curation process -->
+
+### Read
+
+<!-- Description ... -->
+
+```{r}
+#| label: read-data-actives
+#| message: false
+
+#
+doc_vars <-
+  c("lang", "country", "year", "title", "type", "genre", "imdbid")
+
+#
+actives_tbl <-
+  #
+  readtext(
+    file = "../data/original/actives/*.run", #
+    docvarsfrom = "filenames", #
+    docvarnames = doc_vars, #
+    verbosity = 0 #
+  ) |>
+  as_tibble() #
+
+#
+actives_tbl
+```
+
+### Tidy
+
+<!-- Description ... -->
+
+```{r}
+#| label: tidy-data-actives
+
+#
+actives_tbl <-
+  actives_tbl |>
+  mutate(
+    doc_id = row_number() #
+  )
+
+#
+actives_tbl
+```
+
+### Write
+
+<!-- Description ... -->
+
+```{r}
+#| label: write-data-actives
+
+#
+write_csv(
+  x = actives_tbl, #
+  file = "../data/derived/actives_curated.csv" #
+)
+```
+
+## Documentation
+
+<!-- Overview of the purpose and structure of the documentation -->
+
+### Data dictionary
+
+<!-- Description ... -->
+
+```{r}
+#| label: create-data-dictionary
+#| message: false
+
+#
+create_data_dictionary(
+  data = actives_tbl, #
+  file_path = "../data/derived/actives_curated_dd.csv" #
+)
+```
+
+<!--
+
+Note:
+
+You will need to open and edit the `actives_curated_dd.csv` file to add the descriptions for each variable.
+
+-->
+
+
+```{r}
+#| label: tbl-data-dictionary-show
+#| tbl-cap: "Data dictionary: Actives corpus"
+#| message: false
+
+#
+read_csv("../data/derived/actives_curated_dd.csv") |>
+  kable() #
+```
+
+## Self-assessment
+
+<!-- Complete the self-assessment -->
+
+
+
+<!-- Review the .gitignore file to make sure that the data and datasets are not tracked by Git -->
+
+<!-- Commit and push your repo -->
